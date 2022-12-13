@@ -1,0 +1,144 @@
+.left-part {
+    margin: 135px 166px 0 100px;
+}
+
+.left-part > h2 {
+    letter-spacing: 0;
+}
+
+.style-list {
+    margin-top: 35px;
+    padding-left: 0;
+    list-style-type: none;
+}
+
+.style-list > li:not(:last-child) {
+    margin-bottom: 11.5px;
+}
+
+.style-list-a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    line-height: 38px;
+    transition: all .3s linear;
+}
+
+.style-list-a:active,
+.style-list-a:hover,
+.style-list-a-active {
+    color: var(--golden);
+    opacity: 1;
+    position: relative;
+}
+
+.style-list-a:hover::after,
+.style-list-a:active::after,
+.style-list-a-active::after {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    height: 1px;
+    width: 100%;
+    background-color: var(--golden);
+}
+
+.right-part {
+    display: flex;
+}
+
+.style-img-column {
+    display: flex;
+    flex-direction: column;
+    max-width: 398px;
+    margin-top: -40px;
+}
+
+.style-img-column2 {
+    margin-top: -112px;
+}
+
+.style-img-column > img {
+    margin-bottom: 37px;
+    margin-left: 44px;
+}
+
+.img1 {
+    height: 558px;
+}
+.img2 {
+    height: 350px;
+}
+.img3 {
+    height: 275px;
+}
+.img4 {
+    height: 626px;
+}
+
+@media (max-width: 1370px) {
+    .left-part {
+        margin-right: 70px;
+    }
+
+    .style-img-column {
+        max-width: 360px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .left-part {
+        margin-top: 90px;
+    }
+
+    .left-part > h2 {
+        font-size: 22px;
+    }
+
+    .style-list {
+        margin-top: 20px;
+    }
+
+    .style-list-a {
+        font-size: 18px;
+    }
+
+    .style-img-column {
+        max-width: 280px;
+    }
+
+    .style-img-column > img {
+        margin-left: 20px;
+    }
+}
+
+@media (max-width: 992px) {
+    .style-img-column2 {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    
+    .left-part {
+        margin-left: 50px;
+        margin-right: 30px;
+    }
+
+    .right-part {
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .heading-wrapper-mobile {
+        text-align: center;
+        margin-bottom: 24px;
+    }
+
+    .heading-wrapper-mobile > h2 {
+        font-size: 22px;
+        line-height: 30px;
+    }
+}

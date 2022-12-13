@@ -1,0 +1,140 @@
+
+button {
+    font-family: NunitoIt;
+    font-size: 11px;
+    line-height: 15px;
+    text-transform: uppercase;
+    border-radius: 2px;
+    cursor: pointer;
+    transition: all .2s linear;
+}
+
+button:hover {
+    opacity: .7;
+}
+
+.btn {
+    padding: 13px 35px 10px 37px;
+    background-color: var(--golden);
+    color: var(--light);
+    box-shadow: 0px 5px 15px 0px rgba(227, 184, 115, 0.2);
+    border: none;
+}
+
+.btn-main {
+    padding: 19px 44px 17px;
+    margin-right: 17px;
+}
+
+.btn-light {
+    padding: 18px 28px 16px;
+    color: var(--light);
+    border: 1px solid var(--light);
+    background-color: transparent;
+}
+
+.btn-form {
+    padding: 20px 80px 15px;
+    font-family: NunitoReg;
+}
+
+.btn-info {
+    font-family: Yeseva;
+    font-size: 18px;
+    line-height: 25px;
+    font-weight: 400;
+    box-shadow: 5px 5px 10px rgba(227, 184, 115, 0.3);
+    width: 228px;
+    padding: 14px 17px;
+}
+
+.btn-wrapper {
+    margin-top: 133px;
+    margin-left: 31px;
+    z-index: 1;
+}
+
+.btn-call-wrapper {
+    display: flex;
+    justify-content: end;
+}
+
+
+.btn-call {
+    font-family: NunitoReg;
+    padding: 20px 59px 16px 40px;
+    margin-right: 15px;
+}
+
+.btn-wrapper-question {
+    text-align: center;
+}
+
+.btn-question {
+    text-align: center;
+    font-family: NunitoReg;
+    font-style: normal;
+    padding: 21px 79px 15px;
+}
+
+.form-btn-wrapper {
+    margin-left: -45px;
+}
+
+@media (max-width: 1370px) {
+    .btn-wrapper {
+        margin-top: 204px;
+        margin-left: 10px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .btn {
+        padding: 13px 30px 10px;
+    }
+
+    .btn-main {
+        padding: 19px 30px 17px;
+    }
+
+    .btn-light {
+        padding: 18px 30px 16px;
+    }
+
+    .btn-info {
+        font-size: 15px;
+        padding: 14px 17px;
+    }
+
+    .btn-question {
+        padding: 18px 79px;
+    }
+}
+
+@media (max-width: 768px) {
+    .btn-head {
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .btn-main {
+        margin-bottom: 26px;
+        padding: 19px 102px;
+    }
+
+    .btn-light {
+        padding: 19px 86px;
+    }
+
+    .form-btn-wrapper {
+        position: relative;
+        top: 25px;
+    }
+
+    .btn-form,
+    .btn-question {
+        padding: 20px 124px 18px;
+    }
+}

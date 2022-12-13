@@ -1,0 +1,273 @@
+@import "fonts.css";
+@import "vars.css";
+@import "section.css";
+@import "header.css";
+@import "buttons.css";
+@import "inputs.css";
+@import "gallerySection.css";
+@import "videoSection.css";
+@import "repairSection.css";
+@import "styleSection.css";
+@import "clientsSection.css";
+@import "formSection.css";
+@import "mapSection.css";
+@import "footer.css";
+
+body {
+    width: 100vw;
+}
+
+* {
+    margin: 0;
+    font-family: NunitoReg;
+    box-sizing: border-box;
+}
+
+h2 {
+    font-family: Yeseva;
+    font-weight: 400;
+    font-size: 27px;
+    line-height: 38px;
+    color: var(--golden);
+    letter-spacing: -2px;
+    text-transform: uppercase;
+}
+
+h3 {
+    font-family: Yeseva;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    color: var(--light);
+    text-transform: uppercase;
+}
+
+h4 {
+    font-family: Yeseva;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    color: var(--golden);
+    text-transform: uppercase;
+}
+
+h5 {
+    font-family: Yeseva;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 23px;
+    color: var(--dark);
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.container-first {
+    display: flex;
+    flex-direction: column;
+    margin-top: 192px;
+    margin-left: 134px;
+}
+
+.container-second {
+    padding-top: 106px;
+    padding-bottom: 90px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.container-map,
+.bottom-img-wrapper {
+    grid-area: 1/2;
+    padding-bottom: 0;
+}
+
+.main-heading {
+    font-family: Yeseva;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 53px;
+    color: var(--light);
+    text-transform: uppercase;
+    margin-bottom: 18px;
+}
+
+.main-text {
+    font-size: 22px;
+    line-height: 36px;
+    color: var(--light);
+    margin-bottom: 25px;
+}
+
+.img-wrapper,
+.container-first {
+    grid-area: 1/2;
+}
+
+.container-style {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.img-wrapper-style,
+.container-style {
+    grid-area: 1/2;
+}
+
+.info-wrapper {
+    margin-right: 50px;
+    margin-top: 68px;
+}
+
+.heading-group > h3 {
+    display: flex;
+    justify-content: center
+}
+
+.heading-group-black {
+    margin-top: 58px;
+}
+.heading-group-black > h3 {
+    color: var(--dark);
+}
+.heading-group-clients {
+    margin-top: 31px;
+}
+
+.heading-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 72px;
+}
+
+.heading-wrapper > h3 {
+    text-align: center;
+    margin-bottom: 23px;
+    color: var(--golden);
+}
+
+.heading-wrapper-mobile,
+.mobile-container-map {
+    display: none;
+}
+
+@media (max-width: 1370px) {
+    .info-wrapper {
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 1200px) {
+    .main-heading {
+        font-size: 36px;
+    }
+
+    .main-text {
+        font-size: 19px;
+    }
+
+    .info-wrapper > h2 {
+        font-size: 25px;
+    }
+
+    .heading-wrapper {
+        margin-top: 280px;
+    }
+}
+
+@media (max-width: 992px) {
+    .container-second {
+        padding: 106px 20px 90px;
+    }
+    .main-heading {
+        font-size: 24px;
+        line-height: 40px;
+    }
+
+    .main-text {
+        font-size: 16px;
+        line-height: 27px;
+    }
+
+    .info-wrapper {
+        margin-top: 0;
+        margin-bottom: 25px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .img-wrapper {
+        height: 500px;
+    }
+
+    .container-first {
+        margin: 0 auto;
+    }
+
+    .text-wrapper {
+        margin-top: 40px;
+    }
+
+    .heading-wrapper > h3 {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    .mobile-container {
+        padding: 0 18px;
+    }
+
+    .mobile-container-map {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .text-wrapper {
+        margin-top: 85px;
+    }
+
+    .main-heading {
+        font-size: 23px;
+        line-height: 30px;
+    }
+
+    .main-text {
+        font-size: 14px;
+        line-height: 19px;
+        margin-bottom: 45px;
+    }
+
+    .info-wrapper {
+        margin-top: 36px;
+        text-align: center;
+    }
+
+    .container-style {
+        display: none;
+    }
+
+    .heading-group-black {
+        margin-top: 33px;
+    }
+
+    .img-wrapper-style,
+    .heading-group-clients,
+    .bottom-img-wrapper,
+    .container-map {
+        display: none;
+    }
+
+    .heading-wrapper {
+        margin-top: 0;
+    }
+}

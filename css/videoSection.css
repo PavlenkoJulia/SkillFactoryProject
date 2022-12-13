@@ -1,0 +1,122 @@
+.icon-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 13px;
+    margin-bottom: 31px;
+}
+.icon-wrapper-clients {
+    margin-bottom: 19px;
+}
+
+.camera-icon {
+    margin-left: 10px;
+    margin-right: 8px;
+}
+
+.video-block {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.video-img-wrapper {
+    position: relative;
+    max-width: 817px;
+    max-height: 434px;
+    margin-bottom: 62px;
+}
+
+.video-img-wrapper::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.video-img {
+    max-width: 100%;
+    max-height: 100%;
+    box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.15);
+}
+
+.play-icon {
+    position: absolute;
+    top: 30%;
+    right: 44%;
+}
+
+.hr-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 27px;
+}
+
+hr {
+    background-color: var(--golden);
+    height: 2px;
+    width: 55px;
+    border: none;
+    border-radius: 30px;
+}
+
+.video-paragraph {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 82px;
+}
+
+.video-text {
+    font-size: 18px;
+    line-height: 37px;
+}
+
+@media (max-width: 768px) {
+    .play-icon {
+        width: 70px;
+        height: 70px;
+    }
+
+    .video-img-wrapper {
+        max-width: 480px;
+    }
+
+    .video-text {
+        font-size: 16px;
+        line-height: 26px;
+        padding: 0 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .icon-wrapper {
+        margin-bottom: 40px;
+    }
+
+    .video-img-wrapper {
+        max-width: 340px;
+        margin-bottom: 28px;
+    }
+
+    .play-icon {
+        top: 25%;
+        right: 42%;
+    }
+
+    .video-paragraph {
+        margin-bottom: 61px;
+    }
+
+    .video-text {
+        color: #fff;
+        font-size: 11px;
+        line-height: 19px;
+    }
+
+    .hr-wrapper {
+        margin-bottom: 21px;
+    }
+}

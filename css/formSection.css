@@ -1,0 +1,12 @@
+
+.container-question-form,
+.question-img-wrapper {
+    grid-area: 1/2;
+    margin-left: 17px;
+}
+
+@media (max-width: 7680p) {
+    .question-img-wrapper {
+        display: none;
+    }
+}

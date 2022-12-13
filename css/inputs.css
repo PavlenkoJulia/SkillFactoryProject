@@ -1,0 +1,278 @@
+.form-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 33px;
+    padding-left: 33px;
+}
+
+.form-wrapper-dark {
+    display: block;
+    margin-bottom: 32px;
+}
+
+.name-wrapper, .phone-wrapper, .email-wrapper {
+    display: flex;
+    flex-direction: column;
+    margin-right: 92px;
+    margin-left: -35px;
+}
+
+.not-margin {
+    margin-right: 0;
+}
+
+.form-label {
+    font-size: 13px;
+    line-height: 21px;
+    color: var(--dark-grey);
+    opacity: .5;
+}
+
+.form-label-light {
+    color: #fff;
+    opacity: .5;
+    margin-left: 17px;
+}
+
+.form-label-checkbox {
+    color: #181818;
+    opacity: 1;
+    line-height: 24px;
+}
+
+.form-label-checkbox-light {
+    color: #fff;
+}
+
+.form-input {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid rgba(54, 54, 54, 0.3);
+    padding: 0 77px 6px 0;
+    outline: none;
+}
+
+.form-input::placeholder {
+    font-size: 14px;
+    line-height: 23px;
+    color: var(--dark-grey);
+}
+
+.form-input-light {
+    background-color: var(--dark);
+    margin-bottom: 48px;
+    margin-left: 17px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+    padding: 5px 268px 5px 0;
+}
+
+input[type="email"] {
+    margin-bottom: 16px;
+}
+
+.form-input-light::placeholder {
+    color: #fff;
+}
+
+.checkbox-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-left: -26px;
+}
+
+.checkbox-wrapper-light {
+    justify-content: start;
+    margin-left: -18px;
+}
+
+.checkbox-input {
+    -webkit-appearance: none;
+    background-color: var(--golden);
+    border-radius: 1px;
+    width: 18px;
+    height: 18px;
+    display: block;
+    margin-right: 9px;
+}
+
+.checkbox-input:checked::after {
+    content: url(../images/tick.svg);
+    padding: 5px 5px;
+}
+
+.form-dark {
+    margin-top: 59px;
+    max-height: 509px;
+    padding: 27px 34px;
+    background-color: var(--dark);
+    box-shadow: 0px 30px 30px rgba(0, 0, 0, 0.05);   
+}
+
+.form-text {
+    color: #fff;
+    font-size: 18px;
+    line-height: 26px;
+    text-align: center;
+    margin-bottom: 34px;
+}
+
+.question-form {
+    margin: 0 auto;
+    margin-top: 150px;
+    padding: 32px 181px;
+    background-color: #181818;
+    max-width: 883px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.question-form > h3 {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.form-wrapper-question {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 0;
+}
+
+.first-line {
+    display: flex;
+}
+
+.form-input-question {
+    background-color: #181818;
+    padding-right: 78px;
+}
+
+.form-input-question::placeholder {
+    color: #fff;    
+}
+
+.question-wrapper {
+    margin-bottom: 46px;
+    display: flex;
+    flex-direction: column;
+}
+
+.name-wrapper-form,
+.phone-wrapper-form {
+    margin: 0 56px 48px 0;
+}
+
+.form-label-form {
+    margin-left: 0;
+}
+
+.checkbox-wrapper-form {
+    margin-left: -19px;
+    margin-bottom: 12px;
+}
+
+.checkbox-wrapper-mobile {
+    display: none;
+}
+
+@media (max-width: 1200px) {
+    .form-dark {
+        padding: 27px 20px;
+    }
+
+    .question-form {
+        padding: 32px 100px;
+    }
+}
+
+@media (max-width: 768px) {
+    .form-wrapper {
+        flex-wrap: wrap;
+        justify-content: start;
+        padding-left: 55px;
+    }
+    .name-wrapper {
+        margin-bottom: 10px;
+    }
+    .question-form {
+        padding: 32px 30px;
+        max-width: 700px;
+    }
+
+    .first-line {
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 480px) {
+    .form-wrapper {
+        justify-content: center;
+    }
+    .form-label-mobile {
+        color: rgba(255, 255, 255, 0.5);
+    }
+
+    .form-input-mobile {
+        background-color: var(--dark);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+        max-width: 100%;
+    }
+
+    .form-input-mobile::placeholder {
+        color: #fff;
+    }
+
+    .name-wrapper-mobile {
+        margin-bottom: 63px;
+    }
+
+    .phone-wrapper-mobile {
+        margin-bottom: 26px;
+    }
+
+    .name-wrapper-mobile,
+    .phone-wrapper-mobile {
+        min-width: 170px;
+        max-width: 440px;
+        flex-grow: 1;
+        margin-right: 0;
+    }
+
+    .checkbox-wrapper {
+        display: none;
+    }
+
+    .checkbox-wrapper-mobile {
+        display: block;
+        display: flex;
+        justify-content: start;
+        margin-bottom: 113px;
+        margin-left: -40px;
+    }
+
+    .checkbox-mobile {
+        color: #fff;
+    }
+
+    .question-form {
+        margin-top: 0;
+        padding-top: 180px;
+        background-color: transparent;
+    }
+
+    .checkbox-wrapper-form {
+        margin-bottom: 83px;
+        margin-left: 0;
+        justify-content: center;
+    }
+
+    .form-input-question {
+        background-color: transparent;
+    }
+
+    .form-wrapper-question {
+        padding-left: 0;
+    }
+}

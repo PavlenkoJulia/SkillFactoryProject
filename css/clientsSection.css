@@ -1,0 +1,76 @@
+
+
+.heading-text {
+    text-align: center;
+    font-size: 18px;
+    line-height: 30px;
+    color: var(--dark-grey);
+    margin-bottom: 39px;
+}
+
+.column {
+    max-width: 376px;
+    max-height: 428px;
+    box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.04);
+}
+
+.top-part {
+    padding: 24px 32px 66px 20px;
+}
+
+.top-part-name {
+    display: flex;
+    align-items: center;
+}
+
+.top-part-photo {
+    border-radius: 50%;
+    margin-right: 23px;
+}
+
+.top-part-text {
+    font-size: 13px;
+    line-height: 23px;
+    color: var(--grey);
+    margin-top: 7px;
+}
+
+.top-part-text > p {
+    padding-top: 14px;
+}
+.top-part-text > p:last-child {
+    padding-top: 7px;
+}
+
+.bottom-part {
+    display: flex;
+}
+
+.room-info,
+.days-info {
+    display: flex;
+    align-items: center;
+    background-color: var(--golden);
+    box-shadow: 5px 5px 20px rgba(227, 184, 115, 0.5);
+    padding: 11px 14px 10px 18px;
+}
+
+.days-info {
+    border-left: 1px solid #fff;
+}
+
+.days-text {
+    font-family: Yeseva;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: #fff;
+    margin-left: 16px;
+}
+
+@media (max-width: 1200px) {
+    .column:not(:last-child) {
+        margin-bottom: 35px;
+    }
+}

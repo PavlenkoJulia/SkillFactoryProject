@@ -1,0 +1,102 @@
+.section {
+    padding: 0 132px;
+    width: 100vw;
+}
+
+.section-picture,
+.section-form {
+    padding: 0;
+    position: relative;
+    display: grid;
+}
+
+.section-form {
+    top: -73px;
+}
+
+.section-dark {
+    background-color: var(--dark);
+}
+
+.section-double {
+    background: linear-gradient(to bottom, var(--dark) 31%, var(--light) 5% );
+}
+
+.section-column {
+    padding: 0 102px;
+}
+
+.img-wrapper,
+.img-wrapper-style,
+.bottom-img-wrapper {
+    background-image: linear-gradient(to top, rgb(77, 77, 77), rgb(77, 77, 77)), url(../images/main_img.jpg);
+    background-position: center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-blend-mode: multiply;
+    height: 707px;
+    width: 100vw;
+}
+
+.img-wrapper-style {
+    height: 864px;
+    background-image: linear-gradient(to top, rgb(77, 77, 77), rgb(77, 77, 77)), url(../images/main_img2.jpg);
+}
+
+.bottom-img-wrapper {
+    height: 753px;
+    background-image: linear-gradient(180deg, rgb(24, 24, 24) 100%, rgb(24, 24, 24) 80%), url(../images/map-background.jpg);
+}
+
+.question-img-wrapper {
+    background-image: url(../images/question-background.jpg), url(../images/question-bavkground.jpg);
+    width: 100vw;
+    height: 443px;
+    background-position: left, right;
+    background-repeat: repeat, no-repeat;
+    background-size: contain;
+    z-index: -1;
+    opacity: .05;
+}
+
+.section-map {
+    margin-top: -353px;
+    padding-top: 200px;
+    z-index: -1;
+}
+
+@media (max-width: 1200px) {
+    .section {
+        padding: 0 50px;
+        width: 100vw;
+    }
+
+    .section-picture {
+        padding: 0;
+    }
+}
+
+@media (max-width: 992px) {
+    .section-double {
+        background: linear-gradient(to bottom, var(--dark) 25%, var(--light) 5% );
+    }
+
+    .section {
+        padding: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .section-double {
+        background: var(--dark);
+    }
+
+    .section-form {
+        top: 0;
+        background-color: var(--dark);
+    }
+
+    .section-map {
+        margin-top: 0;
+    }
+}
